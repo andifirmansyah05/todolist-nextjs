@@ -9,9 +9,9 @@ library zod untuk konfirmasi input yang dimasukkan di form todolist
 library json-server untuk membuat API custom dengan localhost
 
 ## Tampilan Root Todo List
-![gambar home](https://github.com/andifirmansyah05/todolist-nextjs/blob/main/public/tampilan-home-todo-list.png)
+![gambar home](https://github.com/andifirmansyah05/todolist-nextjs/blob/main/public/github/root.png)
 ## Tampilan Form Todo List
-![gambar form todolist]()
+![gambar form todolist](https://github.com/andifirmansyah05/todolist-nextjs/blob/main/public/github/form-todo.png)
 Penjelasan Singkat
 Terdapat Form Todo untuk menambahkan todo list ke display todo list. Dan dibawah terdapat Todo List untuk menampilkan Todo yang ditambahkan di Form Todo.
 
