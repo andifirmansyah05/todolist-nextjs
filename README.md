@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Todo List dengan Next.js
+## Penjelasan Repo
+Project ini terinspirasi dari channel YT lice dev klik [disini](https://www.youtube.com/watch?v=6OWcC_6T6nE) lebih lanjutnya. Project dibangun dengan Next.js, bila ingin clone ada library yang diperlukan zod dan json-server
+```sh
+npm i json-server
+node i zod
 ```
+library zod untuk konfirmasi input yang dimasukkan di form todolist
+library json-server untuk membuat API custom dengan localhost
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tampilan Root Todo List
+![gambar home](https://github.com/andifirmansyah05/todolist-nextjs/blob/main/public/tampilan-home-todo-list.png)
+## Tampilan Form Todo List
+![gambar form todolist]()
+Penjelasan Singkat
+Terdapat Form Todo untuk menambahkan todo list ke display todo list. Dan dibawah terdapat Todo List untuk menampilkan Todo yang ditambahkan di Form Todo.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Data TodoList
+Data todo list ditempatkan difolder `_utils/db.json`. Pada file tersebut data akan diupload dan diakses. Agar dapat menjadi API maka digunakan library `json-server`. Lalu dalam file `package.json` bagian `scripts` ditambahkan `"rest": "json-server --watch ./app/_utils/db.json --port 3001"`. Maka endpoints yang digunakan `http://localhost:3001/todos`.
